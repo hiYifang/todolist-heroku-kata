@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "54eb0340-6531-4f15-bafc-906d1dab4e19",
+		"name": "Todolist RESTful API kata - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有 Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://secret-harbor-18819.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"secret-harbor-18819",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆 Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要洗臉\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://secret-harbor-18819.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"secret-harbor-18819",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有 Todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://secret-harbor-18819.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"secret-harbor-18819",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆 Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://secret-harbor-18819.herokuapp.com/todos/1234",
+					"protocol": "https",
+					"host": [
+						"secret-harbor-18819",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆 Todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"修改內容\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://secret-harbor-18819.herokuapp.com/todos/1234",
+					"protocol": "https",
+					"host": [
+						"secret-harbor-18819",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
