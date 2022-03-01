@@ -7,7 +7,7 @@
 - http
 - uuid
 - CORS headers
-- successHanle
+- successHandle
 - errHandle
 
 #### 建立 Server、監聽 port
